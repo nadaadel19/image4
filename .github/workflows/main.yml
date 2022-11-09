@@ -8,8 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "listing files"
+      - name: "before listing files"
         run: ls
+
+      - uses: actions/checkout@v3
+      
+      - name: "after listing files"
+        run: ls
+
       
 
 
